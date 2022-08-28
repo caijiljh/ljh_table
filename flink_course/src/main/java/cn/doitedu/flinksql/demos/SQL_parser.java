@@ -1,8 +1,13 @@
 package cn.doitedu.flinksql.demos;
 
 public class SQL_parser {
-
-
+//    Json 中的每个 {} 都需要用 Row 类型来表示
+//    Json 中的每个 [] 都需要用 Arrary 类型来表示
+//    数组的下标是从 1 开始的不是 0 如上面 SQL 中的 data.snapshots[1].url
+//    关键字在任何地方都需要加反引号 如上面 SQL 中的 `type`
+//    select 语句中的字段类型和顺序一定要和结果表的字段类型和顺序保持一致
+//    UDF 可以直接在建表语句中使用
+//TODO
 //
 //    {
 //        "funcName": "test",
